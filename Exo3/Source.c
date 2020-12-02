@@ -6,7 +6,7 @@
 
 int main() {
     int annee;
-
+//  avec operateurs logiques
     printf("Saisir une date : ");
     scanf_s("%d", &annee);
     if (annee % 100 == 0)
@@ -19,7 +19,7 @@ int main() {
     }
 
     int annee2;
-
+//  avec if...else
     printf("Saisir une date : ");
     scanf_s("%d", &annee2);
     if (annee2 % 100 != 0 && (annee2 % 4 == 0 || annee2 % 400 == 0))
