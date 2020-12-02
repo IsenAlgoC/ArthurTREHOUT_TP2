@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+// permet à l'utilisateur d'entrer les trois dimensions d'un
+//bagage et vérifie qu'il est éligible à l'embarquement dans la cabine d'un avion puisque sa taille
+//n'excède pas 55 cm x 35 cm x 25 cm.
 
 int main() {
 	int statut = 0;
@@ -20,7 +22,7 @@ int main() {
 		userVal[1] = 151;
 		userVal[2] = 151;
 		choixUser = 2;
-
+//Le programme pose des questions jusqu'à ce qu'il ait obtenu trois valeurs comprises entre 1 et 150 cm
 		while (userVal[0] > 150) {
 			printf("Dimension 1 de la valise :\n");
 			scanf_s("%f", &userVal[0]);
