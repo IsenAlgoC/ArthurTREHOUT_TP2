@@ -7,7 +7,7 @@
 int main() {
 
     srand(time(NULL));
-    int alÈatoire = rand() % 100 + 1;
+    int al√©atoire = rand() % 100 + 1; //genere un nombre al√©atoire diff √† chaque fois
     int stop = 0;
     int guess = 0;
     int supp = 0;
@@ -15,12 +15,12 @@ int main() {
     {
         printf("Choisir un nombre : ");
         scanf_s("%d", &guess);
-        if (guess > alÈatoire)
+        if (guess > al√©atoire)
         {
             printf("Nombre trop grand\n");
             supp = supp + 1;
         }
-        else if (guess < alÈatoire)
+        else if (guess < al√©atoire)
         {
             printf("Nombre trop petit\n");
             supp = supp + 1;
